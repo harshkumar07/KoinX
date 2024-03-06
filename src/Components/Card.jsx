@@ -9,23 +9,23 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function Card() {
 
     const [bitData, setBitData] = useState(null);
-      // useEffect(() => {
-      //     const fetchData = async () => {
-      //       try {
-      //         const response = await axios.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true");
-      //         const bitcoinData = response.data?.bitcoin;
+      useEffect(() => {
+          const fetchData = async () => {
+            try {
+              const response = await axios.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true");
+              const bitcoinData = response.data?.bitcoin;
       
-      //         if (bitcoinData) {
-      //           const { inr, usd, usd_24h_change } = bitcoinData;
-      //           setBitData({ name: 'Bitcoin', inr, usd, usd_24h_change });
-      //         }
-      //       } catch (error) {
-      //         console.error("Error fetching Bitcoin data:", error);
-      //       }
-      //     };
+              if (bitcoinData) {
+                const { inr, usd, usd_24h_change } = bitcoinData;
+                setBitData({ name: 'Bitcoin', inr, usd, usd_24h_change });
+              }
+            } catch (error) {
+              console.error("Error fetching Bitcoin data:", error);
+            }
+          };
       
-      //     fetchData();
-      //   }, []);
+          fetchData();
+        }, []);
 
 
   return (
