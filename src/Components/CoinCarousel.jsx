@@ -48,7 +48,7 @@ const CoinCarousel = ({ coins }) => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    prevArrow: <button className="slick-prev bg-slate-900">Previous</button>,
+    prevArrow: <button className="slick-prev bg-slate-900 visible">Previous</button>,
     nextArrow: <button className="slick-next bg-slate-900">Next</button>,
     responsive: [
       {
@@ -77,7 +77,7 @@ const CoinCarousel = ({ coins }) => {
               <div className="my-auto" style={{ color: coin.data.price_change_percentage_24h.usd > 0 ? 'green' : 'red' }}>{coin.data.price_change_percentage_24h.usd > 0 ? '+' : ''}{coin.data.price_change_percentage_24h.usd.toFixed(2)}%</div>
             </div>
             <div className='p-2 h-2'>{/[<>\\/]/.test(coin.data.price) ? 'Invalid data' : coin.data.price} </div>
-            <div className='mt-6'><img src={coin.data.sparkline} alt="Price Graph" /></div>
+            <div className='mt-6 w-100%'><img src={coin.data.sparkline} alt="Price Graph" /></div>
           </div>
         </div>
       ))}

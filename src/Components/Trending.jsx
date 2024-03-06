@@ -27,7 +27,7 @@ function TrendingCoins() {
   }, []);
 
   return (
-    <div className='bg-white text-black w-full rounded-md text-lg font-medium justify-start p-5 px-4 mx-auto max-w-72'>
+    <div className='bg-white text-black w-full rounded-md text-lg font-medium justify-start p-5 px-4 mx-auto max-w-80'>
       <div className='text-xl font-bold'>Trending Coins (24h)</div>
       <div className="mt-4 w-full pr-2">
          {coinsData.map((coin, index) => (
