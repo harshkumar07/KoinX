@@ -21,7 +21,7 @@ function Performance() {
 
         <h1 className='text-2xl font-bold pb-2'>Performance</h1>
 
-        <div className='grid grid-cols-4 py-4 px-4 w-full'>
+        <div className='grid grid-cols-4 py-4 px-4 w-full s:text-xs sm:text-sm md:text-normal'>
           <div className='col-span-1'><div className='flex flex-col gap-2 text-slate-600'><div className='text-nowrap text-left '>Today's-Low</div><div className='text-nowrap text-left font-semibold'>46,930.22</div></div></div>
           <div className='col-span-2 my-auto'> <div className="s:w-10/12 md:w-full  mx-auto h-2 flex justify-center my-auto  overflow-hidden rounded-full bg-gradient-to-r from-red-500 via-yellow-500 to-green-500">
             <input type="range" min="0" max="100" value="45" className="w-full my-auto opacity-0 cursor-pointer" /></div></div>

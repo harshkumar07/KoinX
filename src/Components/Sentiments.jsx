@@ -26,7 +26,7 @@ function Sentiments() {
 
 
         <div className='my-auto flex flex-col s:gap-0.5 sm:gap-2  text-slate-600'>
-        <div className='my-auto  text-base flex s:gap-3  sm-gap-6 w-96'><div className='pr-3'>Buy</div> <div className=" s:w-1/3 sm:w-1/2 my-auto h-2 rounded-full bg-green-500"></div> <div>76%</div></div>
+        <div className='my-auto  text-base flex sm:gap-3  sm-gap-6 w-96'><div className='pr-3'>Buy</div> <div className=" s:w-1/3 sm:w-1/2 my-auto h-2 rounded-full bg-green-500"></div> <div>76%</div></div>
         <div className='my-auto  text-base flex s:gap-1.5 sm:gap-4 w-96'><div lassName='pr-2'>Hold</div> <div className="s:w-8 my-auto flex h-2 rounded-full bg-slate-500"></div> <div>8%</div></div>
         <div className='my-auto  text-base flex s:gap-3 sm:gap-6 w-96'><div lassName='pr-3'>Sell</div> <div className="s:w-16 my-auto h-2 rounded-full bg-red-500"></div> <div>16%</div></div>
         </div>
