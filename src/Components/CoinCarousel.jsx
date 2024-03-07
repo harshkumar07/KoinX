@@ -66,7 +66,7 @@ const CoinCarousel = ({ coins }) => {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
     ],
