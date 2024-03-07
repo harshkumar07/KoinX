@@ -28,7 +28,7 @@ function Navbar() {
       </div>
 
       <div className={`md:hidden flex flex-col w-5/12 h-screen z-10 absolute right-0 font-semibold bg-white drop-shadow-md  ${menuOpen ? 'transition-all' : 'hidden'}`} ref={navRef}>
-        <div className='mx-auto flex-col flex gap-5 mt-6  font-sm'>
+        <div className='mx-auto flex-col flex gap-5 mt-6 text-xs'>
           <div className='p-2'>Crypto Taxes</div>
           <div className='p-2'>Free tools</div>
           <div className='p-2'>Resource Center</div>
