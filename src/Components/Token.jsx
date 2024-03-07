@@ -31,7 +31,7 @@ function Token() {
         <div className='font-bold text-lg mt-4'>Initial Distribution</div>
         <div className='flex gap-1 my-auto mt-4 h-32 w-full '>
             <Doughnut data={data} />
-            <div className='flex flex-col w-full  my-auto'>
+            <div className='flex flex-col w-full  my-auto s-overflow-scroll s:y-hidden scrollbar-width-none'>
             <div className='flex items-center text-nowrap'><span className="h-2 w-2 bg-blue-500 rounded-full mr-2"></span> Crowdsale investor: 80%</div>
             <div className='flex items-center text-nowrap'><span className="h-2 w-2 bg-yellow-500 rounded-full mr-2"></span> Foundation: 20%</div>
 

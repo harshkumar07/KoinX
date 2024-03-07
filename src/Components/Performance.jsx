@@ -38,32 +38,32 @@ function Performance() {
         <div className='flex my-auto gap-2 text-xl text-slate-600 font-bold py-3'>Fundamentals
             <div className='my-auto'><CiCircleInfo className='my-auto fill-slate-500 font-bold'/></div>
         </div>
-      <div className='c:flex s:justify-between w-full pb-8'>
+      <div className='c:flex s:justify-between w-full pb-8 s:text-xs sm:text-sm md:text-normal  s:overflow-scroll s:overflow-y-hidden' style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
   {/* First Column */}
   <div className='s:flex-col s:w-full sm:flex flex-col w-2/4'>
     <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>Bitcoin Price</div>
-      <div className='text-right font-semibold'>$16,815.46</div>
+      <div className='text-left text-slate-800 text-nowrap'>Bitcoin Price</div>
+      <div className='text-right font-semibold text-nowrap'>$16,815.46</div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
     <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>25h Low / 24h high</div>
-      <div className='text-right font-semibold'>$16,382.07 / $16,874.12</div>
+      <div className='text-left text-slate-800 text-nowrap'>25h Low / 24h high</div>
+      <div className='text-right font-semibold text-nowrap'>$16,382.07 / $16,874.12</div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
     <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>7d Low / 7d high</div>
-      <div className='text-right font-semibold'>$16,382.07 / $16,874.12</div>
+      <div className='text-left text-slate-800 text-nowrap'>7d Low / 7d high</div>
+      <div className='text-right font-semibold text-nowrap'>$16,382.07 / $16,874.12</div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
     <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>Trading Volume</div>
-      <div className='text-right font-semibold'>$23,249,202,782</div>
+      <div className='text-left text-slate-800 text-nowrap'>Trading Volume</div>
+      <div className='text-right font-semibold text-nowrap'>$23,249,202,782</div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
-    <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>Market Cap Rank </div>
-      <div className='text-right font-semibold'>#1</div>
+    <div className='flex justify-between p-4 text-nowrap'>
+      <div className='text-left text-slate-800 text-nowrap'>Market Cap Rank </div>
+      <div className='text-right font-semibold text-nowrap'>#1</div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
   </div>
@@ -71,28 +71,28 @@ function Performance() {
   {/* Second Column */}
   <div className='s:flex-col s:w-full md:flex flex-col w-2/4'>
     <div className='flex justify-between p-4 '>
-      <div className='text-left text-slate-800'>Market Cap</div>
-      <div className='text-right font-semibold'>$323,570,209,047</div>
+      <div className='text-left text-slate-800 text-nowrap'>Market Cap</div>
+      <div className='text-right font-semibold text-nowrap'>$323,570,209,047</div>
     </div>
     <div className='border-t border-gray-300 w-full '></div>
     <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>Market Cap Dominance</div>
-      <div className='text-right font-semibold'>38.343%</div>
+      <div className='text-left text-slate-800 text-nowrap'>Market Cap Dominance</div>
+      <div className='text-right font-semibold text-nowrap'>38.343%</div>
     </div>
-    <div className='border-t border-gray-300 w-full'></div>
+    <div className='border-t border-gray-300 w-full'></div> 
     <div className='flex justify-between p-4'>
-      <div className='text-left text-slate-800'>Volume / Market Cap</div>
-      <div className='text-right font-semibold'>0.0718</div>
+      <div className='text-left text-slate-800 text-nowrap'>Volume / Market Cap</div>
+      <div className='text-right font-semibold text-nowrap'>0.0718</div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
     <div className='flex justify-between p-1'>
-      <div className='text-left text-slate-800 my-auto px-3'>All-Time High</div>
-      <div className='text-left font-semibold'><div><div className='flex flex-col justify-end'><div className='flex gap-2 justify-end'><div className='text-left'>$69,044.77</div><div className='text-red-500'>-75.6%</div></div><div className='text-slate-600 text-nowrap'>Nov 10, 2021 (about 1 year)</div></div></div></div>
+      <div className='text-left text-slate-800 my-auto px-3 text-nowrap'>All-Time High</div>
+      <div className='text-left font-semibold'><div><div className='flex flex-col justify-end text-nowrap'><div className='flex gap-2 justify-end'><div className='text-left text-nowrap'>$69,044.77</div><div className='text-red-500 text-nowrap'>-75.6%</div></div><div className='text-slate-600 text-nowrap'>Nov 10, 2021 (about 1 year)</div></div></div></div>
     </div>
     <div className='border-t border-gray-300 w-full'></div>
     <div className='flex justify-between p-1'>
-      <div className='text-left text-slate-800 my-auto px-3'>All-Time Low</div>
-      <div className='text-left font-semibold '><div><div className='flex flex-col justify-end'><div className='flex gap-2 justify-end'><div className='text-left'>$67.81</div><div className='text-green-500'>24729.1%</div></div><div className='text-slate-600 text-nowrap'>Jul 6, 2013 (over 9 year)</div></div></div></div>
+      <div className='text-left text-slate-800 my-auto px-3 text-nowrap'>All-Time Low</div>
+      <div className='text-left font-semibold text-nowrap'><div><div className='flex flex-col justify-end text-nowrap'><div className='flex gap-2 justify-end text-nowrap'><div className='text-left text-nowrap'>$67.81</div><div className='text-green-500 text-nowrap'>24729.1%</div></div><div className='text-slate-600 text-nowrap'>Jul 6, 2013 (over 9 year)</div></div></div></div>
 
     </div>
     <div className='border-t border-gray-300 w-full'></div>
