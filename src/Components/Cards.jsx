@@ -1,9 +1,6 @@
 import React from 'react'
-import TradingViewWidget from './TradingView'
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import { FaArrowRightLong } from "react-icons/fa6";
 import Card from './Card'
-import img1 from '../assets/Screenshot_2024-03-05_192140-removebg-preview.png'
+
 
 function Cards() {
   return (

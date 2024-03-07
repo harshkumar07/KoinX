@@ -38,14 +38,13 @@ function TrendingCoins() {
                 <h3 className="my-auto pl-1">{coin.name}</h3>
                 <p className="my-auto">({coin.symbol})</p>
               </div>
-             <div className={`my-auto flex gap-0 rounded-md p-.5 px-1 ${coin.changePercentage > 0 ? 'bg-green-200' : 'bg-red-200'}`}>
+             <div className={`my-auto w-20 flex gap-0 rounded-md p-.5 px-1 flex-shrink-0 ${coin.changePercentage > 0 ? 'bg-green-200' : 'bg-red-200'}`}>
                  {coin.changePercentage > 0 ? 
-                 <TiArrowSortedUp className='my-auto text-green-600'/> : 
-                 <TiArrowSortedDown className='my-auto text-red-600'/>
+                 <TiArrowSortedUp className='my-auto mt-1 text-green-600'/> : 
+                 <TiArrowSortedDown className='my-auto mt-1 text-red-600'/>
                  }
              <p className={`my-auto text-base ${coin.changePercentage >= 0 ? 'text-green-600' : 'text-red-600'}`}>{coin.changePercentage}%</p>
            </div> 
-
             </div>
           </div>
         ))}
